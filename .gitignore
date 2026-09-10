@@ -1,0 +1,11 @@
+# Secrets — never commit (contains a live Duckie API key)
+.mcp.json
+*.key
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Office lock / temp files
+~$*
