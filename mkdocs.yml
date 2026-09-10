@@ -1,0 +1,68 @@
+site_name: Duckie Agents
+site_description: Design, runbooks, and rollout notes for AvantStay's Duckie (GX) agents
+docs_dir: docs
+
+theme:
+  name: material
+  icon:
+    logo: material/robot-happy
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Agents:
+      - Guest Registration Outreach:
+          - Overview: agents/guest-registration-outreach/index.md
+          - Runbook: agents/guest-registration-outreach/runbook.md
+          - Property config (phase 2): agents/guest-registration-outreach/property-config.md
+  - Roadmap:
+      - Overview: roadmap/index.md
+      - "Weekly sync — 2026-08-24": roadmap/syncs/2026-08-24.md
+      - "Weekly sync — 2026-08-04": roadmap/syncs/2026-08-04.md
+      - "Weekly sync — 2026-07-14": roadmap/syncs/2026-07-14.md
+  - Reference:
+      - MCP write setup: reference/mcp-write-setup.md
+      - Case creation (in-stay vs feedback): reference/case-creation-instay-vs-feedback.md
+      - Reservation outreach instructions: reference/reservation-outreach-agent-instructions.md
+      - Renewal talking points: reference/renewal-talking-points.md
+      - Cowork context: reference/cowork-context.md
